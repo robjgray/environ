@@ -235,9 +235,9 @@ Defaults to `'(environ-ignore-bash-vars)`.
 
 ## File Format
 
-Each non-empty, non-comment line in an env file must be in a `KEY=VALUE` 
-format, with one entry per line. This package invokes a `bash` shell to 
-interpret the file, so shellisms should work (like `~` expansion or using 
+Each non-empty, non-comment line in an env file must be in a `KEY=VALUE`
+format, with one entry per line. This package invokes a `bash` shell to
+interpret the file, so shellisms should work (like `~` expansion or using
 single quotes to prevent variable interpolation).
 
 For example:
@@ -248,9 +248,7 @@ B="bar"
 C='R$%!$KP$'
 D=$A-bar
 E=~/cats
-# F ignored
-
-H=is-not
+# This line is a comment and is ignored
 ```
 
 ## Usage from org-mode
